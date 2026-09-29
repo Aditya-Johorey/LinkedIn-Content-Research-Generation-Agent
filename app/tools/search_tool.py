@@ -8,6 +8,9 @@ client = TavilyClient(
 )
 
 def search_marketing_trends(query: str):
+
+    print(f"Invoking tavily for searching on the topic: {query}")
+
     response = client.search(
         query = query,
         search_depth="advanced",
